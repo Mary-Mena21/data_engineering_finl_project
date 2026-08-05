@@ -1,0 +1,12 @@
+name: 'openlibrary_dbt'
+version: '1.0.0'
+config-version: 2
+
+profile: 'final'
+
+models:
+  openlibrary_dbt:
+    silver:
+      +materialized: view
+    gold:
+      +materialized: table
