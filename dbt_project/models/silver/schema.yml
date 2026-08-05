@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: silver_books
+    description: "One row per book, cleaned and typed"
+    columns:
+      - name: work_key
+        description: "OpenLibrary work identifier"
+        tests:
+          - unique
+          - not_null
+      - name: title
+        tests:
+          - not_null

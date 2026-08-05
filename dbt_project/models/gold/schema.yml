@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: gold_author_stats
+    description: "Aggregated stats per author"
+    columns:
+      - name: author_name
+        tests:
+          - not_null
